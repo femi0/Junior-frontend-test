@@ -1,15 +1,15 @@
 import { PureComponent } from "react";
 
-import CategoryData from "./category.data";
+import Women from "./women.data";
 
 import PreviewCollection from "../../component/preview-collection/preview-collection.component";
 
-class CategoryPage extends PureComponent{
+class Womens extends PureComponent{
     constructor(props){
         super(props)
 
         this.state ={
-            collection: CategoryData
+            collection: Women
         }
     }
     render(){
@@ -27,4 +27,4 @@ class CategoryPage extends PureComponent{
 }
 
 
-export default CategoryPage;
+export default Womens;

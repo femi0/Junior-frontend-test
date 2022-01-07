@@ -1,4 +1,4 @@
-const CategoryData = [
+const Women = [
     {
         id: 1,
         title: 'Womens',
@@ -51,4 +51,4 @@ const CategoryData = [
       
 ];
 
-export default CategoryData;
+export default Women;

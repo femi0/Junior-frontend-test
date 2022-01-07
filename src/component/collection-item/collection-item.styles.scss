@@ -6,13 +6,15 @@
     align-items: center;
     transform: translateZ(0);
     transition: transform 0.25s ease-out;
+    background-color: whitesmoke;
 
     &:hover{
         transform: scale(1.05);
     }
     .image {
-      width: 100%;
-      height: 95%;
+      margin-top: 5%;
+      width: 90%;
+      height: 80%;
       background-size: cover;
       background-position: center;
       margin-bottom: 5px;
@@ -26,9 +28,10 @@
       font-size: 18px;
   
       .name {
-        width: 90%;
+        width: 85%;
         margin-bottom: 15px;
-    
+        margin-left: 17px;
+        
       }
   
       .price {

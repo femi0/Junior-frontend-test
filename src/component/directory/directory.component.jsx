@@ -24,7 +24,7 @@ class Directory extends PureComponent{
                     linkUrl: 'shop/mens'
                   },
                   {
-                    title: 'Kids',
+                    title: 'Jackets',
                     imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
                     id: 2,
                     linkUrl: 'shop/jackets'
