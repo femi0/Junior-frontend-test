@@ -1,4 +1,5 @@
 import { PureComponent } from "react";
+
 import CollectionItem from "../collection-item/collection-item.component";
 
 
@@ -16,17 +17,17 @@ class PreviewCollection extends PureComponent{
                    this.props.items.filter((item, idx) => idx < 3)
                    .map(item => (
                         <CollectionItem key={item.id} item={item} />
-                   )) 
                         
+                    ))
                 }
                    
             </div>
             <br />
             <div className="preview">
                 {
-                   this.props.items.filter((id, idx) => idx > 2)
-                   .map(({ id,  ...otherItemProps }) => (
-                        <CollectionItem key={id} {...otherItemProps} />
+                   this.props.items.filter((item, idx) => idx > 2)
+                   .map(item => (
+                        <CollectionItem key={item.id} item={item} />
                     ))
                 }
 

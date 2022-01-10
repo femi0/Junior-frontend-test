@@ -1,28 +1,31 @@
 import { PureComponent } from "react";
 import { connect } from "react-redux";
-import CartButton from "../custom-button/cart-button.component";
 import { addItem } from "../../redux/cart/cart.actions";
 import '../collection-item/collection-item.styles.scss';
-
+import CartButton from "../custom-button/cart-button.component";
 
 class CollectionItem extends PureComponent{
-   
+    constructor(props){
+        super(props)
+    }
+ 
     render(){
-       
+        
+        const {name,price,imageUrl} = this.props.item;
         return(
             <div className="collection-item">
                 <div className="image"
                 style={{
-                    backgroundImage: `url(${this.props.imageUrl})` 
+                    backgroundImage: `url(${imageUrl})` 
                 }}
                 > 
-                    <CartButton onClick={() => addItem(this.props.newItem)}/>
+                    <CartButton onClick={() => {console.log(this.props);addItem(this.props.newItem)}}/>
                 </div>
                 
                     <div className="collection-footer">
-                        <span className="name">{ this.props.name }</span>
+                        <span className="name">{name }</span>
                         
-                        <span className="price">{this.props.price}</span> 
+                        <span className="price">{price}</span> 
                     </div>
                    
             </div>
