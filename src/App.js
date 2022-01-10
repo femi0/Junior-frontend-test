@@ -6,8 +6,16 @@ import Womens from './pages/category/women.component';
 import Mens from './pages/category/men.component';
 import Sneakers from './pages/category/Sneakers.component';
 import HeaderSection from './component/header/header.component';
+import { connect } from 'react-redux';
+
 
 export class App extends PureComponent {
+  constructor(props){
+      super(props);
+      this.state ={
+          hidden:null
+      }
+  }
   render(){
     return(
       <div>
@@ -25,4 +33,6 @@ export class App extends PureComponent {
   }
 }
 
-export default App;
+
+
+export default connect(null, )(App);
