@@ -11,8 +11,8 @@ class CartButton extends PureComponent{
     render(){
      
         return(
-           <div className="cart-ico"> 
-                <ShoppingIcon onClick= {this.props.onClick} className="shopping-icon"/>
+           <div className="cart-ico" onClick= {this.props.onClick}> 
+                <ShoppingIcon className="shopping-icon"/>
            </div>
         )
     }

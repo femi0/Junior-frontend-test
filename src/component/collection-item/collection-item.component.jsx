@@ -19,7 +19,7 @@ class CollectionItem extends PureComponent{
                     backgroundImage: `url(${imageUrl})` 
                 }}
                 > 
-                    <CartButton onClick={() => {console.log(this.props);addItem(this.props.newItem)}}/>
+                    <CartButton onClick={() => {this.props.addItem(this.props.item)}}/>
                 </div>
                 
                     <div className="collection-footer">
@@ -37,4 +37,4 @@ const  mapDispatchToProps = dispatch => ({
     addItem: newItem => dispatch(addItem(newItem))
 })
 
-export default connect(mapDispatchToProps) (CollectionItem);
+export default connect(null, mapDispatchToProps) (CollectionItem);
